@@ -1,10 +1,8 @@
-#!name=Locket Gold Premium
-#!desc=Mở khóa tính năng Locket Gold (Premium).
-#!system=ios
+#!name=Locket Gold DIY
+#!desc=Mở khóa tính năng Premium cho Locket Gold.
 
 [Script]
-# Mở khóa các tính năng trả phí của Locket
-locket_gold = type=http-response,pattern=^https:\/\/api\.locket\.camera\/v1\/users\/.*\/subscription,requires-body=1,script-path=https://raw.githubusercontent.com/GZ-Script/QuantumultX/main/Locket/Locket.js
+Locket_Gold = type=http-response,pattern=^https?:\/\/api\.locket\.camera\/v1\/subs,requires-body=1,script-path=https://raw.githubusercontent.com/USER_CUA_BAN/REPO_CUA_BAN/main/locket.js
 
 [MITM]
-hostname = api.locket.camera
+hostname = %APPEND% api.locket.camera
